@@ -1,0 +1,22 @@
+{
+  "name": "wireframe-to-production-bootstrap-edition",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamal-Raja/wireframe-to-production-bootstrap-edition.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jamal-Raja/wireframe-to-production-bootstrap-edition/issues"
+  },
+  "homepage": "https://github.com/Jamal-Raja/wireframe-to-production-bootstrap-edition#readme",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
