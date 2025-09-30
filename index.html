@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@
       <header>
         <nav class="navbar navbar-expand-md bg-info px-5 fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand scale" href="index.html"
               >Renaissance <span>Construction</span></a
             >
             <button
@@ -68,16 +68,16 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
+                  <a class="nav-link link-underline-animate" href="services.html">Services</a>
+                </li>
+                <li class="nav-item"> 
+                  <a class="nav-link link-underline-animate" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link link-underline-animate" href="contact.html">Contact</a>
                 </li>
               </ul>
-              <div class="theme-toggle nav-item px-2">
+              <div class="theme-toggle nav-item px-2 scale">
                 <i class="fas fa-sun" id="theme-icon"></i>
               </div>
             </div>
@@ -86,6 +86,52 @@
       </header>
 
       <!-- Hero Section-->
+      <section class="hero-section">
+        <div
+          style="
+            height: 100vh;
+            background-image: url(assets/img/index-hero-2.jpg);
+            background-size: cover;
+            background-position: center;
+          "
+          class="position-relative w-100"
+        >
+          <!-- Dark Overlay -->
+          <div
+            class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
+            style="
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.4) 40%,
+                rgba(0, 0, 0, 0) 100%
+              );
+            "
+          >
+            <div class="container">
+              <div class="hero-content col-md-6">
+                <!-- on small screens remove  -->
+                <h1 class=" hero-h1 mb-4 mt-2 font-weight-bold">
+                  Strong Foundations. Stunning
+                  <span style="color: var(--brand);">Results</span>
+                </h1>
+                <p style="color: #bbb">
+                  Whether it’s a new build or a big project, our promise is
+                  simple: quality work, honest guidance, and results you can be
+                  proud of.
+                </p>                
+              </div>
+            </div>
+          </div>
+          <a href="#fancy-section"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+      </section>
+
+      <section class="fancy-section" id="fancy-section"></section>
 
       <!-- Bootstrap Breakpoint Visualizer -->
       <div

@@ -1,14 +1,200 @@
-/* General Reset */
+/* ========= ROOT VARIABLES ========= */
+:root {
+  --brand: #d96913; /* Primary brand color (buttons, highlights) */
+  --brand-contrast: #ffffff; /* Text/icon color on brand backgrounds */
+  --accent: #e08c4b; /* Secondary accent (hover, subtle highlights) */
+  --radius: 10px; /* Default border radius for components */
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Default soft shadow */
+}
+
+/* ========= Light theme ========= */
+:root[data-theme="light"] {
+  --bg: #f2f2f2; /* Page background */
+  --bg-contrast: #212121; /* Page Background Contrast */
+  --surface: #e6ae83; /* Cards, header, nav, panels */
+  --text: #0a111f; /* Primary text on light BG */
+  --text-muted: rgba(10, 17, 31, 0.65); /* Secondary text on light BG */
+  --border: #dd7b2f; /* Divider/border lines */
+  --link: #a65316; /* Link color on light BG */
+  --link-hover: #d96913; /* Link hover on light BG (brand) */
+}
+
+/* ========= Dark theme ========= */
+:root[data-theme="dark"] {
+  --bg: #050910; /* Page background (rich black) */
+  --bg-contrast: #0d141f; /* Page Background Contrast */
+  --surface: #0a111f; /* Cards, header, nav, panels */
+  --text: #f2f2f2; /* Primary text on dark BG */
+  --text-muted: rgba(242, 242, 242, 0.7); /* Secondary text on dark BG */
+  --border: rgba(242, 242, 242, 0.12); /* Subtle borders on dark BG */
+  --link: #dd7b2f; /* Link color on dark BG */
+  --link-hover: #d96913; /* Link hover on dark BG (brand) */
+}
+
+/* Smooth transition between light and dark mode */
+html,
+body {
+  transition: background-color 0.45s ease, color 0.45s ease;
+}
+
+header,
+.navbar,
+.dropdown-menu,
+.card,
+.panel {
+  transition: background-color 0.45s ease, border-color 0.45s ease,
+    color 0.45s ease;
+}
+a,
+.btn,
+.btn-primary,
+.btn-outline {
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+svg,
+.icon {
+  transition: fill 0.45s ease, stroke 0.45s ease, color 0.45s ease;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Sansation, sans-serif;
 }
 
-body {
-  font-family: var(--font-family);
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: #f9f9f9;
-  height: 1;
+main {
+  background-color: var(--bg);
+}
+
+.link-underline-animate {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline-animate::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--link-hover);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease, transform-origin 0s;
+}
+
+.link-underline-animate:hover::after,
+.link-underline-animate:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.link-underline-animate:not(:hover)::after {
+  transform-origin: right;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--surface) !important;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 900;
+  font-size: 2rem;
+  transition: scale 0.2s ease;
+  line-height: 0.9;
+  text-shadow: var(--shadow);
+}
+
+.scale:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.scale:active {
+  scale: 0.95;
+}
+
+.navbar-brand span {
+  color: var(--brand);
+}
+
+.nav-link {
+  color: var(--link) !important;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+#theme-icon {
+  font-weight: 900 !important;
+  font-size: 1.3rem;
+  position: relative;
+  top: 3px;
+}
+
+/* ========= INDEX PAGE ========= */
+/* HERO SECTION */
+.hero-section {
+  height: calc(100vh-56px) !important;
+}
+
+.hero-h1 {
+  font-size: 3rem !important;
+  font-weight: 1000;
+  line-height: 1;
+}
+
+.hero-content {
+  width: 400px !important;
+}
+
+.fa-chevron-down {
+  color: var(--text-muted);
+  font-size: 3rem;
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1.8s infinite, fadePulse 3s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-12px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-6px);
+  }
+}
+
+@keyframes fadePulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* FANCY SECTION */
+.fancy-section {
+  height: 100vh;
 }
