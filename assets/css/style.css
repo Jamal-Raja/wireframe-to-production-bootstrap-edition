@@ -68,6 +68,25 @@ main {
   background-color: var(--bg);
 }
 
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--brand);
+    padding: 0.75rem 1.5rem;
+    margin: auto 0;
+    color: #fff;
+    border-radius: 9999px;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
+.btn:active{scale: 0.95;}
+
 .link-underline-animate {
   position: relative;
   display: inline-block;
@@ -196,5 +215,30 @@ main {
 
 /* FANCY SECTION */
 .fancy-section {
-  height: 100vh;
+  padding-top: calc(56px + 2rem);
+  padding-bottom: 6rem;
+}
+
+.fancy-section img {
+  max-width: 1200px; 
+}
+
+.fs-row {
+  max-width: 1200px;
+  padding-top: 4rem;
+}
+
+.fs-col {
+  color: var(--text);
+}
+
+.fs-col:first-child {
+  max-width: 14ch;
+    line-height: .95;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.fs-col:nth-child(2) {
+  padding-left: 1rem;
 }
