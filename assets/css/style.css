@@ -320,3 +320,10 @@ main {
 .footer .footer-links a:hover {
   color: var(--link-hover);
 }
+
+
+/* ========= INDEX PAGE ========= */
+/* SERVICES SECTION */
+.services-section {
+  background-color: var(--bg);
+}
