@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts Preconnect -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="assets/js/main.js"></script>
+    <title>Renaissance Construction | Home</title>
+  </head>
+  <body class="bg-dark text-light">
+    <!-- Main Content -->
+    <main>
+      <!-- Navbar -->
+      <header>
+        <nav class="navbar navbar-expand-md bg-info px-5 fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand scale" href="index.html"
+              >Renaissance <span>Construction</span></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-underline-animate"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-underline-animate"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-underline-animate" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <div class="theme-toggle nav-item px-2 scale">
+                <i class="fas fa-sun" id="theme-icon"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero Section-->
+      <section class="hero-section">
+        <div
+          style="
+            height: 100vh;
+            background-image: url(assets/img/about-us.jpg);
+            background-size: cover;
+            background-position: center;
+          "
+          class="position-relative w-100"
+        >
+          <!-- Dark Overlay -->
+          <div
+            class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
+            style="
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.4) 40%,
+                rgba(0, 0, 0, 0) 100%
+              );
+            "
+          >
+            <div class="container">
+              <div class="hero-content col-md-6">
+                <h1 class="hero-h1 mb-4 mt-2 font-weight-bold">
+                  About
+                  <span style="color: var(--brand)">us</span>
+                </h1>
+                <p style="color: #bbb">
+                  Powering a shift to spaces that work better and waste less
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#about-section"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact-section" class="py-5">
+        <div class="container-xxl">
+          <div class="row g-5 align-items-start">
+            <!-- LEFT: Contact details -->
+            <div class="contact-left-side col-12 col-lg-6">
+              <h1 class="text-auto display-6 mb-3">We are here to help</h1>
+              <p class="text-auto lead mb-4">
+                You can reach us via our contact form on our website or by
+                phone. Our office hours are Monday to Friday, from 8:00 AM to
+                5:00 PM.
+              </p>
+
+              <div class="mb-4">
+                <h2 class="h4 contact-item-title">Call us</h2>
+                <a
+                  href="tel:02012345678"
+                  class="stretched-link text-decoration-none ms-4"
+                  >020 1234 5678</a
+                >
+              </div>
+
+              <div class="mb-4">
+                <h2 class="h4 contact-item-title">Email us</h2>
+                <a
+                  href="mailto:Contact@Renaissance-Construction.co.uk"
+                  class="stretched-link text-decoration-none ms-4"
+                >
+                  Contact@Renaissance-Construction.co.uk
+                </a>
+              </div>
+
+              <div>
+                <h2 class="h4 contact-item-title">Headquarters</h2>
+                <a
+                  href="https://maps.app.goo.gl/8SttE9AVn6oVSTq17"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-decoration-none ms-4 d-inline-block"
+                >
+                  Unit 6<br />Some Business Centre<br />Street name<br />Postcode<br />United
+                  Kingdom
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT: Contact form -->
+            <div class=" contact-right-side col-12 col-lg-6">
+              <div class="contact-panel rounded-4 p-4 p-lg-5">
+                <h2 class="h4 text-center mb-4">Contact Form</h2>
+
+                <form action="#" method="post" novalidate>
+                  <div class="mb-3">
+                    <label for="name" class="form-label fw-semibold"
+                      >Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control contact-control"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="telephone" class="form-label fw-semibold"
+                      >Telephone:</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control contact-control"
+                      id="telephone"
+                      name="telephone"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold"
+                      >Email:</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control contact-control"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="message" class="form-label fw-semibold"
+                      >Reason for enquiry:</label
+                    >
+                    <textarea
+                      class="form-control contact-control contact-textarea"
+                      id="message"
+                      name="message"
+                      rows="6"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-brand px-4">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex align-self-center">
+              <p>&copy; 2025 Renaissance Construction. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com/"
+                  class="fab fa-facebook-f"
+                  title="Facebook"
+                ></a>
+                <a
+                  href="https://x.com/?lang=en"
+                  class="fab fa-twitter"
+                  title="Twitter"
+                ></a>
+                <a
+                  href="https://www.instagram.com/"
+                  class="fab fa-instagram"
+                  title="Instagram"
+                ></a>
+              </div>
+              <div class="footer-links">
+                <a class="link-underline-animate" href="services.html"
+                  >Services</a
+                >
+                <a class="link-underline-animate" href="about.html">About</a>
+                <a class="link-underline-animate" href="contact.html"
+                  >Contact</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
