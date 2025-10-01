@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts Preconnect -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="assets/js/main.js"></script>
+    <title>Renaissance Construction | Home</title>
+  </head>
+  <body class="bg-dark text-light">
+    <!-- Main Content -->
+    <main>
+      <!-- Navbar -->
+      <header>
+        <nav class="navbar navbar-expand-md bg-info px-5 fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand scale" href="index.html"
+              >Renaissance <span>Construction</span></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link link-underline-animate"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-underline-animate" href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-underline-animate" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <div class="theme-toggle nav-item px-2 scale">
+                <i class="fas fa-sun" id="theme-icon"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero Section-->
+      <section class="hero-section">
+        <div
+          style="
+            height: 100vh;
+            background-image: url(assets/img/index-hero-2.jpg);
+            background-size: cover;
+            background-position: center;
+          "
+          class="position-relative w-100"
+        >
+          <!-- Dark Overlay -->
+          <div
+            class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
+            style="
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.4) 40%,
+                rgba(0, 0, 0, 0) 100%
+              );
+            "
+          >
+            <div class="container">
+              <div class="hero-content col-md-6">
+                <!-- on small screens remove  -->
+                <h1 class="hero-h1 mb-4 mt-2 font-weight-bold">
+                  Strong Foundations. Stunning
+                  <span style="color: var(--brand)">Results</span>
+                </h1>
+                <p style="color: #bbb">
+                  Whether it’s a new build or a big project, our promise is
+                  simple: quality work, honest guidance, and results you can be
+                  proud of.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#fancy-section"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+      </section>      
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex align-self-center">
+              <p>&copy; 2025 Renaissance Construction. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f" title="Facebook"></a>
+                <a href="https://x.com/?lang=en" class="fab fa-twitter" title="Twitter"></a>                
+                <a href="https://www.instagram.com/" class="fab fa-instagram" title="Instagram"></a>
+              </div>
+              <div class="footer-links">
+                <a class="link-underline-animate" href="services.html">Services</a>
+                <a class="link-underline-animate" href="about.html">About</a>
+                <a class="link-underline-animate" href="contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>      
+      </div>
+    </main>
+  </body>
+</html>
