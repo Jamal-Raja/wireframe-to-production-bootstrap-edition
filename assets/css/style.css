@@ -325,5 +325,119 @@ main {
 /* ========= INDEX PAGE ========= */
 /* SERVICES SECTION */
 .services-section {
-  background-color: var(--bg);
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-header {    
+    color: var(--text);
+    padding: calc(2.5rem + 56px) 1rem 2.5rem 1rem;
+    width: auto;
+    max-width: 1400px;
+}
+
+.services-header p {    
+    max-width: 55%;    
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 2.5rem 1rem;
+    gap: 1rem;
+}
+
+.service {
+    flex: 1 1 calc(50% - 1rem);
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.service img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;          
+    object-fit: cover;    
+}
+
+.service p {
+    padding-bottom: .75rem;
+}
+
+.service-description-card {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    left: 0; right: 0; bottom: 0;
+    color: #fff;
+    background: rgba(23, 32, 42, 0.75);
+    padding: 0.5rem 1.5rem;
+    /* Start overlay card so additional info is hidden */
+    transform: translateY(70%);
+    transition: transform 320ms ease, background 200ms ease;
+}
+
+.service:hover .service-description-card, .service:focus-within .service-description-card {
+    /* Move overlay card so all info is visible  */
+    transform: translateY(0);
+    background: rgba(23, 32, 42, 0.9);
+}
+
+@media(max-width: 1375px) {
+    .service-description-card h1 {
+        font-size: 1.5rem;
+    }
+    .service-description-card p {
+        font-size: 0.7rem;
+        padding-bottom: 0.35rem;
+    }
+}
+
+@media(max-width: 992px) {
+    .service {
+        flex: 100%;
+    }
+    .services-header {
+        width: 100%;
+        text-align: center;
+    }
+    .services-header p {    
+        max-width: unset;    
+    }
+    .service-description-card {
+        transform: translateY(87%);
+    }
+    .service-description-card p {
+        font-size: 0.7rem;
+        padding-bottom: 0.35rem;
+    }
+}
+@media(max-width: 828px) {
+    .service-description-card {
+        transform: translateY(80%);
+    }
+}
+@media(max-width: 576px) {
+    .service-description-card h1 {        
+        font-size: 16px;
+    }
+    .service-description-card p {
+        font-size: 0.5rem;
+    }
+}
+@media(max-width: 445px) {
+    .service-description-card {
+        transform: translateY(76%);
+    }    
+}
+@media(max-width: 367px) {
+    .service-description-card {
+        transform: translateY(72%);
+    }    
 }
