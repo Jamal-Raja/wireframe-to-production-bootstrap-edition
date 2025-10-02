@@ -161,6 +161,15 @@ main {
   top: 3px;
 }
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    white-space: normal;  /* allow “Renaissance Construction” to wrap */
+    font-size: 1.5rem;    /* smaller, so it fits neatly on two lines */
+    display: inline-block;/* ensures wrapping behaves nicely */
+  }
+}
+
 /* ========= INDEX PAGE ========= */
 /* HERO SECTION */
 .hero-section {
@@ -191,13 +200,24 @@ main {
   cursor: pointer;
 }
 
+.img-zoom-wrap {
+  position: relative;
+  overflow: hidden;      /* crop the excess when scaled */
+}
+
+.img-zoom-wrap img {
+  display: block;
+  width: 100%;           /* keeps the layout width fixed */
+  height: 100%;
+  object-fit: cover;     /* optional: keeps aspect fill */
+  transform-origin: center center;
+  animation: zoom 8s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
 @keyframes zoom {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
+  from { transform: scale(1); }
+  to   { transform: scale(1.1); }  /* zooms but container width never changes */
 }
 
 @keyframes bounce {
