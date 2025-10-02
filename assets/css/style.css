@@ -469,18 +469,16 @@ main {
 /* ========= CONTACT PAGE ========= */
 /* CONTACT SECTION * */
 
+.contact-section {
+  padding: 6rem 0 !important;
+}
+
 .contact-left-side {
   color: var(--text);  
 }
 
-.contact-section div {
-  color: var(--text);
-  border: 8px solid red;
-}
-
 .contact-item-title {
   position: relative;
-  margin-left: 2rem;
 }
 .contact-item-title::before {
   content: "";
@@ -492,13 +490,15 @@ main {
   background-color: var(--brand);
 }
 
-/* Form card */
+.form-title {color: var(--text); font-weight: 600;}
+
+form { color: var(--text);}
+
 .contact-panel {
-  background-color: rgba(246, 186, 122, 0.448); /* same amber translucency */
+  background-color: rgba(246, 186, 122, 0.448); 
   border-radius: 2rem;
 }
 
-/* Inputs (Bootstrap + custom look) */
 .contact-control {
   background-color: rgba(246, 186, 122, 0.238);
   color: var(--text);
@@ -508,11 +508,11 @@ main {
 }
 .contact-textarea { height: auto; padding-top: .75rem; }
 
-/* Focus / simple validation glow (similar to yours) */
 .contact-control:focus {
   border: none;
   box-shadow: 0 0 12px rgba(0, 102, 255, 0.9);
   outline: none;
+  background-color: rgba(246, 186, 122, 0.238);
 }
 .contact-control:valid {
   box-shadow: 0 0 12px rgba(0, 204, 68, 0.9);
@@ -528,7 +528,6 @@ main {
   100% { box-shadow: 0 0 8px rgba(0, 204, 68, 0.6); }
 }
 
-/* Button (keeps your orange look) */
 .btn-brand {
   background-color: #f08a22;
   color: #fff;
@@ -537,9 +536,6 @@ main {
 }
 .btn-brand:hover,
 .btn-brand:focus { filter: brightness(0.95); }
-
-/* Optional: tidy underline animation hook if you already use it */
-.link-underline-animate { text-decoration: underline; text-underline-offset: .2em; }
 
 @media (min-width: 1400px) {
   .container-xxl { max-width: 1400px; }
