@@ -184,6 +184,10 @@ main {
   line-height: 1;
 }
 
+.brand-accent {
+  color: var(--brand);
+}
+
 .hero-content {
   width: 400px !important;
 }
@@ -198,26 +202,6 @@ main {
   transform: translateX(-50%);
   animation: bounce 1.8s infinite, fadePulse 3s infinite;
   cursor: pointer;
-}
-
-.img-zoom-wrap {
-  position: relative;
-  overflow: hidden;      /* crop the excess when scaled */
-}
-
-.img-zoom-wrap img {
-  display: block;
-  width: 100%;           /* keeps the layout width fixed */
-  height: 100%;
-  object-fit: cover;     /* optional: keeps aspect fill */
-  transform-origin: center center;
-  animation: zoom 8s ease-in-out infinite alternate;
-  will-change: transform;
-}
-
-@keyframes zoom {
-  from { transform: scale(1); }
-  to   { transform: scale(1.1); }  /* zooms but container width never changes */
 }
 
 @keyframes bounce {
