@@ -165,6 +165,8 @@ main {
 /* HERO SECTION */
 .hero-section {
   height: calc(100vh-56px) !important;
+    animation: zoom 10s ease-in-out infinite alternate;
+
 }
 
 .hero-h1 {
@@ -187,6 +189,15 @@ main {
   transform: translateX(-50%);
   animation: bounce 1.8s infinite, fadePulse 3s infinite;
   cursor: pointer;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 @keyframes bounce {
@@ -468,7 +479,6 @@ main {
 }
 /* ========= CONTACT PAGE ========= */
 /* CONTACT SECTION * */
-
 .contact-section {
   padding: 6rem 0 !important;
 }
